@@ -1,6 +1,6 @@
-site_name: ZIJI-CS-<课程名称> # TODO: 请修改项配置，将尖括号内的内容替换为课程名称
-repo_name: ZIJI-CS/F-MkDocs-Template # TODO: 请修改项配置，将其设置为对应的仓库
-repo_url: https://github.com/ZIJI-CS/F-MkDocs-Template # TODO: 请修改项配置，将其设置为对应的仓库的 URL，一般替换后缀即可
+site_name: ZIJI-CS-FundamentalDataStructure # TODO: 请修改项配置，将尖括号内的内容替换为课程名称
+repo_name: ZIJI-CS/T-FundamentalDataStructure # TODO: 请修改项配置，将其设置为对应的仓库
+repo_url: https://github.com/ZIJI-CS/T-FundamentalDataStructure # TODO: 请修改项配置，将其设置为对应的仓库的 URL，一般替换后缀即可
 edit_uri: blob/main/docs
 
 copyright: 'Copyright &copy 2024 ZIJI-CS' # TODO: 请修改项配置，主要就是年份，对的就不用管
@@ -24,6 +24,7 @@ theme:
     edit: material/pencil
     view: material/eye
   # custom_dir: overrides # TODO: 请根据指导配置完 Giscus 后再取消注释：https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/
+  # 没开放 Discussions，不能启用该功能
 
 markdown_extensions:
   - toc:
@@ -64,7 +65,7 @@ plugins:
   - search:
       separator: '[\s\-\.]+'
   - git-committers:
-      repository: ZIJI-CS/F-MkDocs-Template # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
+      repository: ZIJI-CS/T-FundamentalDataStructure # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
       branch: main
   - statistics:
       words_per_minute: 200
@@ -75,6 +76,7 @@ extra_css:
   - supports/css/base.css
   - supports/css/theme.css
   - supports/css/admonitions.css
+  - supports/css/custom-adms.css
   # 如果公式渲染样式出现问题，请检查如下脚本
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css
 
@@ -84,6 +86,7 @@ extra_javascript:
   # 如果公式渲染出现问题，请检查如下脚本
   - supports/js/katex.js
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 # ======================================== >>>
 # TODO: 请修改本项配置，本节是导航配置项，一般只需要在下面增加新的章节对应的文件即可，支持结构化配置
@@ -91,8 +94,10 @@ extra_javascript:
 nav:
   - "Home": "https://ziji-cs.github.io/"
   - "Main":
-    - index.md
-    - 0-x.md
+    - "index.md"
+    - "2-x.md"
+    - "3-x.md"
+    - "4-x.md"
   # - "Appendix":
 
 # ======================================== <<<
