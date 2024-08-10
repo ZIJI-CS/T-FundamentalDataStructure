@@ -2,6 +2,7 @@ site_name: ZIJI-CS-FundamentalDataStructure # TODO: 请修改项配置，将尖�
 repo_name: ZIJI-CS/T-FundamentalDataStructure # TODO: 请修改项配置，将其设置为对应的仓库
 repo_url: https://github.com/ZIJI-CS/T-FundamentalDataStructure # TODO: 请修改项配置，将其设置为对应的仓库的 URL，一般替换后缀即可
 edit_uri: blob/main/docs
+use_directory_urls: false  # 加上这句后才能显示用 html img 相对路径插入的图片
 
 copyright: 'Copyright &copy 2024 ZIJI-CS' # TODO: 请修改项配置，主要就是年份，对的就不用管
 
@@ -98,6 +99,11 @@ nav:
     - "2-x.md"
     - "3-x.md"
     - "4-x.md"
+    - "5-x.md"
+    - "6-x.md"
+    - "7-x.md"
+    - "8-x.md"
+    - "9-x.md"
   # - "Appendix":
 
 # ======================================== <<<
